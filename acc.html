@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <title>ACC</title>
+        <link href="./css/bulma.css" rel="stylesheet">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="./js/module.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <nav class="nav has-shadow">
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item is-tab is-active" href="">IOS</a>
+              <a class="nav-item is-tab">NX-OS</a>
+              <a class="nav-item is-tab">ACI</a>
+              <a class="nav-item is-tab">F5</a>
+            </div>
+          </div>
+        </nav> 
+        <section class="hero">
+          <div class="hero-body">
+              <div class="container">
+  
+                <article class="message is-info">
+                  <div class="message-header">
+                    Info
+                  </div>
+                  <div class="message-body">
+                    NW機器のConfigを自動チェックするwebアプリケーションです。上のタブから機器を選択して、show runの中身だけを下記に貼り付けてください。
+                  </div>
+                </article>              
+              </div>
+          </div>            
+        </section>
+
+        <section class="hero">
+          <div class="hero-body">
+            <div class="container">
+                <div class="control is-grouped nav-right">
+                  <p class="control">
+                    <a  id="config_submit" class="button is-large is-primary is-pulled-right">Submit</a>
+                  </p>
+                  <p class="control">
+                    <a id="config_clear" class="button is-large is-danger is-pulled-right">Clear</a>
+                  </p>
+                </div>
+
+                <textarea id="config_source" class="textarea" placeholder="コンフィグを入力" ></textarea>
+                <hr>
+            </div>
+
+            <div class="container">
+             <article class="message">
+                <div class="message-header">
+                  出力結果
+                </div>
+                <div class="message-body">
+                <p id="output"></p>
+
+                </div>
+              </article>
+                
+            </div>
+
+          </div>
+        </section>
+
+    </body>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+
+</html>
